@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.background {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgb(210,85,101);
+    background: linear-gradient(90deg, rgba(210,85,101,1) 35%, rgba(46,148,185,1) 65%);
+}
+
+.turno {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 20vh;
+}
+
+.turnoX {
+    color: #982b3a;
+}
+
+.turnoO {
+    color: #116989;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+header img {
+    margin: 15px;
+    height: 15vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main button {
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    font-size: 56px;
+    border: none;
+    font-family: 'Permanent Marker', cursive;
+}
+
+main button:disabled {
+    opacity: 100;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    color: #FFFDC1;
+}
+
+footer .heart {
+    color: red; 
+    font-size: medium;
+}
+
+.btn {
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #F0B775;
+    color: rgba(23, 23, 23, 0.853);
+    font-weight: 600;   
+    min-width: 100px;
+}
+
+.btn:hover {
+    background-color: #d29a59;
+    box-shadow: none;
+}
+
+.btn:disabled{
+    background-color: #d29a59;
+    box-shadow: none;
+}

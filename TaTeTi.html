@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Te Ti</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="background">
+            <div id="X" class="turno">
+                <p id="lblPartidasGanadasX" class="turnoX"></p>
+            </div>
+            <div id="O" class="turno">
+                <p id="lblPartidasGanadasO" class="turnoO"></p>
+            </div>
+            <audio id="audioHey" src="media/hey.mp3"></audio>
+        </aside>
+
+        <header>
+            <img src="media/header.png" alt="">
+        </header>
+    
+        <main>
+            <div class="row">
+                <button id="btnA1" class="pieza" onclick="CambiarAXO(this)" disabled>-</button>
+                <button id="btnB1" class="pieza" onclick="CambiarAXO(this)" disabled>-</button>
+                <button id="btnC1" class="pieza" onclick="CambiarAXO(this)" disabled>-</button>
+            </div>
+            <div class="row">
+                <button id="btnA2" class="pieza" onclick="CambiarAXO(this)" disabled>-</button>
+                <button id="btnB2" class="pieza" onclick="CambiarAXO(this)" disabled>-</button>
+                <button id="btnC2" class="pieza" onclick="CambiarAXO(this)" disabled>-</button>
+            </div>
+            <div class="row">
+                <button id="btnA3" class="pieza" onclick="CambiarAXO(this)" disabled>-</button>
+                <button id="btnB3" class="pieza" onclick="CambiarAXO(this)" disabled>-</button>
+                <button id="btnC3" class="pieza" onclick="CambiarAXO(this)" disabled>-</button>
+            </div>
+        </main>
+
+        <section class="options">
+            <button id="btnEmpezar" class="btn" onclick="InicializarJuego()">¡Jugar!</button>
+            <!-- <button class="btn" id="btnTema" onclick="CambiarTema()">Cambiar tema</button> -->
+            <button class="btn" id="btnResetearPuntaje" onclick="ResetearPuntaje()">Resetear puntaje</button>
+            <button class="btn" id="btnCheats" onclick="ActivarCheats()" disabled>Modo trampa</button>
+        </section>
+
+        <footer>
+            <p>Hecho por Franco Taboada - 2022 - con <span class="heart">♥</span></p>
+        </footer>
+    </div>
+
+    <script src="js/confetti.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
